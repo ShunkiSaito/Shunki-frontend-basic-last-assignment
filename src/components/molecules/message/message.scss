@@ -3,20 +3,18 @@
 .message {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 32px, 20px;
+  padding: 32px 20px;
 
   @media (min-width: $breakpoint-lg) {
-    padding: 52px, 20px;
+    padding: 52px 20px;
   }
 }
 
 .message-title {
   font-family: $fontfamily-mincho;
   font-size: $fontsize-l;
-  display: flex;
-  text-align: center;
   margin-bottom: 6px;
 
   @media (min-width: $breakpoint-lg) {
@@ -28,8 +26,6 @@
 .message-detail {
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
-  display: flex;
-  text-align: center;
   line-height: 28px;
 
   @media (min-width: $breakpoint-lg) {
