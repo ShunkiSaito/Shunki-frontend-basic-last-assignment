@@ -27,6 +27,7 @@
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   line-height: 28px;
+  margin-bottom: 0px;
 
   @media (min-width: $breakpoint-lg) {
     line-height: 36px;
