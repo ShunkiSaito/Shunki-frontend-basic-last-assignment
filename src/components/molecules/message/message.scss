@@ -10,26 +10,25 @@
   @media (min-width: $breakpoint-lg) {
     padding: 52px 20px;
   }
-}
+  .message-title {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    margin-bottom: 6px;
 
-.message-title {
-  font-family: $fontfamily-mincho;
-  font-size: $fontsize-l;
-  margin-bottom: 6px;
-
-  @media (min-width: $breakpoint-lg) {
-    font-size: $fontsize-xl;
-    margin-bottom: 10px;
+    @media (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xl;
+      margin-bottom: 10px;
+    }
   }
-}
 
-.message-detail {
-  font-family: $fontfamily-gothic;
-  font-size: $fontsize-s;
-  line-height: 28px;
-  margin-bottom: 0px;
+  .message-detail {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    line-height: 28px;
+    margin-bottom: 0px;
 
-  @media (min-width: $breakpoint-lg) {
-    line-height: 36px;
+    @media (min-width: $breakpoint-lg) {
+      line-height: 36px;
+    }
   }
 }
