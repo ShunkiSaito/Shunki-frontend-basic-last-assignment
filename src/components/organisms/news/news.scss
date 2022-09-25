@@ -4,6 +4,10 @@
   margin-bottom: 35px;
 
   .news-list {
+    a {
+      text-decoration: none;
+    }
+
     .article {
       padding-left: 20px;
       font-weight: 400;
@@ -26,9 +30,7 @@
           margin-bottom: 10px;
         }
       }
-      a {
-        text-decoration: none;
-      }
+
       h3 {
         font-size: $fontsize-m;
         line-height: 23px;
