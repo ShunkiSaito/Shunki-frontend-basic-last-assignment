@@ -2,16 +2,19 @@
 
 .news {
   margin-bottom: 35px;
-  .news-and-events-title {
-    h2 {
-      font-size: $fontsize-xxl;
-    }
-  }
+
   .news-list {
     .article {
+      padding-left: 20px;
       font-weight: 400;
       border: 1px solid $gray_gainsboro;
       background-color: $white;
+      border-top: none;
+      padding-bottom: 20px;
+
+      &.first {
+        border-top: 1px solid $gray_gainsboro;
+      }
       .news-list-content1 {
         align-items: center;
         display: flex;
@@ -20,10 +23,12 @@
           color: $gray_nobel;
           font-size: $fontsize-xs;
           line-height: 12px;
-          padding-left: 20px;
           padding-top: 20px;
           margin-bottom: 10px;
         }
+      }
+      a {
+        text-decoration: none;
       }
       h3 {
         font-size: $fontsize-m;
@@ -32,9 +37,8 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         transition: all 0.2s ease;
         &:hover {
           color: $orange_bistre;
