@@ -9,7 +9,6 @@
     }
 
     .article {
-      padding-left: 20px;
       font-weight: 400;
       border: 1px solid $gray_gainsboro;
       background-color: $white;
@@ -19,7 +18,7 @@
       &.first {
         border-top: 1px solid $gray_gainsboro;
       }
-      .news-list-content1 {
+      .news-list-content {
         align-items: center;
         display: flex;
 
