@@ -1,0 +1,65 @@
+@use "../../variables" as *;
+
+.navbar {
+  background-color: $black;
+  padding: 19.72px 16px;
+  @media screen and(min-width: $breakpoint-xl) {
+    background-color: $black_50;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar-toggler {
+    padding: 0;
+    .header-humberger-img {
+    }
+  }
+  .navbar-collapse {
+    .nav-item {
+      position: relative;
+      top: 19.72px;
+      &.dropdown:hover > .dropdown-menu {
+        @media screen and(min-width: $breakpoint-xl) {
+          display: block;
+        }
+      }
+      .plus-img {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        @media screen and(min-width: $breakpoint-xl) {
+          visibility: hidden;
+        }
+      }
+      .nav-link {
+        color: $white;
+        font-size: $fontsize-s;
+        line-height: 20px;
+        padding: 15px 16px;
+        transition: all 0.2s ease;
+        &:hover {
+          @media screen and(min-width: $breakpoint-xl) {
+            color: $gray_nobel;
+          }
+        }
+      }
+      .dropdown-menu {
+        background-color: $black;
+        margin-top: 0px;
+        padding-top: 0px;
+        border: none;
+        border-radius: 0;
+        .dropdown-item {
+          padding: 15px 28px;
+          color: $white;
+          font-size: $fontsize-s;
+          line-height: 20px;
+          transition: all 0.2s ease;
+          &:hover {
+            background-color: $orange_bistre;
+          }
+        }
+      }
+    }
+  }
+}
