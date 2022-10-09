@@ -5,16 +5,38 @@
   padding: 19.72px 16px;
   @media screen and(min-width: $breakpoint-xl) {
     background-color: $black_50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px, 30px;
   }
   .navbar-brand {
     padding: 0;
+    margin-right: 0;
+    @media screen and(min-width: $breakpoint-xl) {
+      padding: 0;
+    }
+  }
+
+  .header-img {
+    width: 120px;
+    @media screen and(min-width: $breakpoint-xl) {
+      width: 140px;
+    }
   }
   .navbar-toggler {
     padding: 0;
-    .header-humberger-img {
-    }
+    outline: 0px;
   }
-  .navbar-collapse {
+
+  #navbarSupportedContent {
+    @media screen and(min-width: $breakpoint-xl) {
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      background-color: transparent;
+    }
     .nav-item {
       position: relative;
       top: 19.72px;
@@ -42,6 +64,8 @@
             color: $gray_nobel;
           }
         }
+        @media screen and(min-width: $breakpoint-xl) {
+        }
       }
       .dropdown-menu {
         background-color: $black;
@@ -55,8 +79,16 @@
           font-size: $fontsize-s;
           line-height: 20px;
           transition: all 0.2s ease;
+          @media screen and(min-width: $breakpoint-xl) {
+            width: 220px;
+            padding: 18px;
+          }
+
           &:hover {
-            background-color: $orange_bistre;
+            background-color: transparent;
+            @media screen and(min-width: $breakpoint-xl) {
+              background-color: $orange_bistre;
+            }
           }
         }
       }
