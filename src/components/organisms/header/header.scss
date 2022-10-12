@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px, 30px;
+    padding: 0px 16px;
   }
   .navbar-brand {
     padding: 0;
@@ -48,7 +48,7 @@
       .plus-img {
         position: absolute;
         top: 12px;
-        right: 16px;
+        right: 1px;
         @media screen and(min-width: $breakpoint-xl) {
           visibility: hidden;
         }
@@ -57,15 +57,17 @@
         color: $white;
         font-size: $fontsize-s;
         line-height: 20px;
-        padding: 0px 20px;
-        margin-bottom: 35px;
+        padding: 15px 20px;
         transition: all 0.2s ease;
+
         &:hover {
           @media screen and(min-width: $breakpoint-xl) {
             color: $gray_nobel;
           }
         }
         @media screen and(min-width: $breakpoint-xl) {
+          margin-bottom: 35px;
+          padding: 0px, 21px;
         }
       }
       .dropdown-menu {
@@ -74,12 +76,18 @@
         padding-top: 0px;
         border: none;
         border-radius: 0;
+
+        @media screen and(min-width: $breakpoint-xl) {
+          position: absolute;
+          top: 65px;
+        }
         .dropdown-item {
           padding: 15px 28px;
           color: $white;
           font-size: $fontsize-s;
           line-height: 20px;
           transition: all 0.2s ease;
+
           @media screen and(min-width: $breakpoint-xl) {
             width: 220px;
             padding: 18px;
