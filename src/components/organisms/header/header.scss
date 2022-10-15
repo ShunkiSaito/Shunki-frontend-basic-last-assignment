@@ -39,8 +39,6 @@
       background-color: transparent;
     }
     .nav-item {
-      position: relative;
-      top: 19.72px;
       &.dropdown:hover > .dropdown-menu {
         @media screen and(min-width: $breakpoint-xl) {
           display: block;
@@ -57,7 +55,6 @@
         }
       }
       .nav-link {
-        position: relative;
         bottom: 20px;
         color: $white;
         font-size: $fontsize-s;
@@ -80,7 +77,7 @@
 
         @media screen and(min-width: $breakpoint-xl) {
           position: absolute;
-          top: 50px;
+          top: 70px;
         }
         .dropdown-item {
           position: relative;
