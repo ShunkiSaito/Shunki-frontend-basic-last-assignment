@@ -1,21 +1,22 @@
 @use "../../variables" as *;
 
 .navbar {
+  padding: 0;
   background-color: $black;
-  padding: 19.72px 16px;
   @media screen and(min-width: $breakpoint-xl) {
     background-color: $black_50;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px 16px;
+    padding: 20px 30px;
   }
   .navbar-brand {
-    padding: 0;
+    padding: 19.72px 16px;
     margin-right: 0;
     @media screen and(min-width: $breakpoint-xl) {
       padding: 0;
+      margin-top: 0;
     }
   }
 
@@ -26,8 +27,8 @@
     }
   }
   .navbar-toggler {
-    padding: 0;
     outline: 0px;
+    padding-right: 16px;
   }
 
   #navbarSupportedContent {
@@ -45,19 +46,23 @@
           display: block;
         }
       }
+
       .plus-img {
+        display: flex;
         position: absolute;
-        top: 12px;
-        right: 1px;
+        top: -8px;
+        right: 16px;
         @media screen and(min-width: $breakpoint-xl) {
           visibility: hidden;
         }
       }
       .nav-link {
+        position: relative;
+        bottom: 20px;
         color: $white;
         font-size: $fontsize-s;
         line-height: 20px;
-        padding: 15px 20px;
+        padding: 15px 16px;
         transition: all 0.2s ease;
 
         &:hover {
@@ -65,23 +70,21 @@
             color: $gray_nobel;
           }
         }
-        @media screen and(min-width: $breakpoint-xl) {
-          margin-bottom: 35px;
-          padding: 0px, 21px;
-        }
       }
       .dropdown-menu {
         background-color: $black;
         margin-top: 0px;
-        padding-top: 0px;
+        padding: 0px;
         border: none;
         border-radius: 0;
 
         @media screen and(min-width: $breakpoint-xl) {
           position: absolute;
-          top: 65px;
+          top: 50px;
         }
         .dropdown-item {
+          position: relative;
+          bottom: 20px;
           padding: 15px 28px;
           color: $white;
           font-size: $fontsize-s;
@@ -91,6 +94,7 @@
           @media screen and(min-width: $breakpoint-xl) {
             width: 220px;
             padding: 18px;
+            position: static;
           }
 
           &:hover {
