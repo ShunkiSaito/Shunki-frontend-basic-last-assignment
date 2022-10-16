@@ -1,29 +1,34 @@
 @use "../../variables" as *;
-
-.about {
-  margin-bottom: 40px;
+.container {
+  padding: 0px;
+  max-width: 540px;
   @media screen and(min-width: $breakpoint-lg) {
-    margin-bottom: 100px;
+    max-width: 960px;
   }
-  .about-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .about {
+    margin-bottom: 40px;
     @media screen and(min-width: $breakpoint-lg) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 100px;
     }
-    .img {
-      width: 100%;
+    .img-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media screen and(min-width: $breakpoint-lg) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .img {
+        width: 100%;
+      }
     }
-  }
-  .message {
-    background-color: $white_smoke;
-    text-align: center;
-    padding: 32px 24px;
-    @media screen and(min-width:$breakpoint-lg) {
-      padding: 52px 20px;
-    }
-    .message-title {
-      color: $orange_bistre;
+    .message {
+      background-color: $white_smoke;
+      padding: 32px 24px;
+      @media screen and(min-width:$breakpoint-lg) {
+        padding: 52px 20px;
+      }
+      .message-title {
+        color: $orange_bistre;
+      }
     }
   }
 }
