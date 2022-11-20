@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .message {
+    width: 100%;
+    margin-top: 56px;
+    padding-top: 0px;
+    .message-title {
+      color: $orange_bistre;
+    }
+  }
+  .plan-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    gap: 30px;
+    @media screen and(max-width: $breakpoint-md) {
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .plan-text {
+      white-space: nowrap;
+    }
+  }
+  .button {
+    margin-bottom: 100px;
+    @media screen and(max-width: $breakpoint-md) {
+      margin-bottom: 35px;
+    }
+  }
+}
